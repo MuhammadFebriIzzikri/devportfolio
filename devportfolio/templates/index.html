@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio pribadi developer: proyek, kemampuan, dan kontak.">
+  <title>Febri Izzikri — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="Kembali ke beranda"><span class="brand-mark">F</span><span>febri<span class="brand-dot">.</span>dev</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+        <a class="nav-cta" href="#projects">Lihat Proyek <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <div class="availability"><span class="status-dot"></span> SEDANG BELAJAR & MEMBANGUN PROYEK</div>
+        <p class="eyebrow">HALO, SAYA FEBRI IZZIKRI</p>
+        <h1>Membangun pengalaman digital yang <span class="gradient-text">bermakna.</span></h1>
+        <p class="hero-description">Saya calon Web Developer yang sedang belajar membuat website modern, responsif, dan bermanfaat dengan JavaScript dan Python.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Jelajahi Proyek <span>↗</span></a>
+          <a class="button button-secondary" href="#contact">Hubungi Saya</a>
+        </div>
+        <div class="hero-meta">
+          <div class="avatar-stack"><span>JS</span><span>Py</span><span>UI</span></div>
+          <p><strong>Terus belajar, terus membangun.</strong><br><span>Fokus pada web development</span></p>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Ilustrasi kode">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="code-window">
+          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>developer.js</span><span class="window-lock">⌘</span></div>
+          <div class="code-content">
+            <p><span class="line-number">01</span> <span class="code-purple">const</span> developer = {</p>
+            <p><span class="line-number">02</span> &nbsp; name: <span class="code-green">'Febri'</span>,</p>
+            <p><span class="line-number">03</span> &nbsp; role: <span class="code-green">'Web Developer'</span>,</p>
+            <p><span class="line-number">04</span> &nbsp; skills: [</p>
+            <p><span class="line-number">05</span> &nbsp;&nbsp; <span class="code-blue">'JavaScript'</span>,</p>
+            <p><span class="line-number">06</span> &nbsp;&nbsp; <span class="code-blue">'Python'</span></p>
+            <p><span class="line-number">07</span> &nbsp; ],</p>
+            <p><span class="line-number">08</span> &nbsp; learning: <span class="code-orange">true</span></p>
+            <p><span class="line-number">09</span> };</p>
+            <p class="code-comment"><span class="line-number">10</span> // always building 🚀</p>
+          </div>
+          <div class="code-status"><span><i></i> All systems learning</span><span>UTF-8</span></div>
+        </div>
+        <div class="floating-chip chip-top"><span class="chip-icon purple">✳</span><div><strong>Clean UI</strong><small>Design with purpose</small></div></div>
+        <div class="floating-chip chip-bottom"><span class="chip-icon blue">⌘</span><div><strong>Code & Create</strong><small>One project at a time</small></div></div>
+      </div>
+      <a class="scroll-hint" href="#about"><span></span> GULIR UNTUK MENJELAJAHI</a>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / TENTANG SAYA</p><h2>Awal yang baik dimulai dari <span class="gradient-text">rasa ingin tahu.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-card reveal"><div class="about-icon">✦</div><h3>Perjalanan Saya</h3><p>Saya sedang membangun fondasi web development melalui latihan dan proyek pribadi. Saya percaya cara terbaik untuk berkembang adalah membuat sesuatu, mengujinya, lalu memperbaikinya.</p></div>
+        <div class="about-note reveal"><span class="quote-mark">“</span><p>Tujuan saya bukan hanya menulis kode, tetapi membuat solusi digital yang mudah digunakan dan benar-benar membantu orang.</p><div class="note-signature"><span class="signature-line"></span><span>Prinsip yang saya pegang</span></div></div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading reveal"><p class="eyebrow">02 / KEAHLIAN</p><h2>Teknologi yang sedang <span class="gradient-text">saya pelajari.</span></h2><p class="section-intro">Daftar ini menggambarkan teknologi yang sedang saya latih melalui proyek. Saya akan memperbaruinya seiring bertambahnya pengalaman.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><div class="skill-logo html-logo">5</div><div><h3>HTML5</h3><p>Struktur halaman web</p></div><span class="skill-level">DASAR</span></article>
+        <article class="skill-card reveal"><div class="skill-logo css-logo">✳</div><div><h3>CSS3</h3><p>Layout & responsive design</p></div><span class="skill-level">DASAR</span></article>
+        <article class="skill-card reveal"><div class="skill-logo js-logo">JS</div><div><h3>JavaScript</h3><p>Interaksi & logika web</p></div><span class="skill-level">DASAR</span></article>
+        <article class="skill-card reveal"><div class="skill-logo py-logo">Py</div><div><h3>Python</h3><p>Logika & backend</p></div><span class="skill-level">DASAR</span></article>
+        <article class="skill-card reveal"><div class="skill-logo flask-logo">F</div><div><h3>Flask</h3><p>Web server & API</p></div><span class="skill-level">DIPERDALAM</span></article>
+        <article class="skill-card reveal"><div class="skill-logo git-logo">⌘</div><div><h3>Git & GitHub</h3><p>Version control</p></div><span class="skill-level">DIPERDALAM</span></article>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading project-heading reveal"><div><p class="eyebrow">03 / PROYEK PILIHAN</p><h2>Belajar dengan <span class="gradient-text">membangun.</span></h2></div><span class="project-count">01 — 03</span></div>
+      <p class="section-intro reveal">Proyek latihan untuk mengembangkan kemampuan dan menerapkan apa yang saya pelajari. Data kartu diambil dari API Python.</p>
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project-card project-loading"><p>Memuat proyek dari API...</p></article>
+      </div>
+      <p class="project-disclaimer">Catatan: proyek contoh di atas adalah konsep latihan. Ganti dengan proyek yang benar-benar sudah kamu buat sebelum digunakan untuk melamar kerja.</p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner reveal">
+        <p class="eyebrow">04 / HUBUNGI SAYA</p>
+        <h2>Punya ide menarik?<br><span class="gradient-text">Mari kita mulai percakapan.</span></h2>
+        <p>Saya terbuka untuk belajar, berkolaborasi, dan mendapatkan masukan tentang proyek saya.</p>
+        <a class="button button-primary" href="mailto:emailkamu@example.com">Kirim Email <span>↗</span></a>
+        <span class="contact-hint">Ganti alamat email contoh dengan email kamu sendiri.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container"><a class="brand" href="#home"><span class="brand-mark">F</span><span>febri<span class="brand-dot">.</span>dev</span></a><p>Dibuat dengan rasa ingin tahu dan banyak latihan.</p><a href="#home" class="back-top">Kembali ke atas ↑</a></footer>
+</body>
+</html>
